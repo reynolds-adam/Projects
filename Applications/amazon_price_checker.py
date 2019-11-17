@@ -21,7 +21,7 @@ def check_price():
     converted_price = float(price[1:])
 
     # price check of desired price 
-    if converted_price > 340:
+    if converted_price < 340:
         send_email(title = email_title, price = price)
 
 # function that sends the email
